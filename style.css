@@ -4,19 +4,22 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
+    font-family: 'League Spartan', 'Work Sans';
     background-color: #121214;
     color: #E1E1E6;
-    font-family: 'League Spartan', 'Work Sans';
+    max-width: 1580px;
+}
+
+.container {
     margin-top: -15px;
     height: 100vh;
-    width: 100vw;
+    width: 10vw;
     box-sizing: border-box;
     position: absolute;
-    width: 720px;
-    height: 780px;
     left: 0px;
     top: 0px;
 
@@ -32,11 +35,10 @@ body {
 }
 
 .image-aside {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
+
+    position: fixed;
     width: 880px;
-    height: 842px;
+    height: 100vh;
     left: 720px;
     top: 0px;
 
@@ -46,18 +48,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -315px 0px;
+    object-fit: cover;
 
 
 
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 14.8em;
+    padding-left: 37px;
+}
+
 .content h2 {
-    position: absolute;
+
     width: 666px;
     height: 30.44px;
-    left: 36px;
-    top: 236px;
-
+    margin-bottom: 19px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -70,12 +80,10 @@ body {
 }
 
 .content h4 {
-    position: absolute;
+
     width: 517px;
     height: 16px;
-    left: 36px;
-    top: 290px;
-
+    margin-bottom: 15px;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 700;
@@ -88,11 +96,9 @@ body {
 }
 
 .content p {
-    position: absolute;
+
     width: 647px;
     height: 38px;
-    left: 36px;
-    top: 320px;
 
     font-family: 'League Spartan';
     font-style: normal;
@@ -128,18 +134,19 @@ input {
     left: 36px;
     top: 465px;
     padding-left: 15px;
-
+    outline: none;
     filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
 }
-.retangle{
-    position: absolute;
-width: 5px;
-height: 48px;
-left: 36px;
-top: 465px;
 
-background: #04D361;
-z-index: 99;
+.retangle {
+    position: absolute;
+    width: 5px;
+    height: 48px;
+    left: 36px;
+    top: 465px;
+
+    background: #04D361;
+    z-index: 99;
 }
 
 
@@ -177,15 +184,23 @@ ul li a {
     font-weight: 700;
     font-size: 16px;
     line-height: 138.73%;
+    
 
 }
-
-ul li :hover {
-    color: rgb(194, 170, 170)
+.link1{
+    transition: 0.4s;
+    
 }
+.link1:hover {
+    border-bottom: 1px solid #04D361;
+    transform: scale(1.1);
+    transition: 0.4s;
+    
+}
+
 
 .feather-arrow-right {
-    position: absolute;
+    position: relative;
     width: 24px;
     height: 24px;
     left: 154px;
