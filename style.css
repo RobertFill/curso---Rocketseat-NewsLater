@@ -4,75 +4,54 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', 'Work Sans';
 
 }
 
 body {
-    font-family: 'League Spartan', 'Work Sans';
     background-color: #121214;
     color: #E1E1E6;
     max-width: 1580px;
 }
 
+
 .container {
-    margin-top: -15px;
-    height: 100vh;
-    width: 10vw;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    margin: 40px 0 0 50px;
 
 }
 
-.logo {
-    box-sizing: border-box;
-    position: absolute;
-    width: 389px;
-    height: 94px;
-    left: 30px;
-    top: 40px;
-}
-
-.image-aside {
+span img {
 
     position: fixed;
-    width: 880px;
+    width: 900px;
     height: 100vh;
-    left: 720px;
-    top: 0px;
 
-    background: #C4C4C4;
+    left: 700px;
+    top: 0px;
 
     background: url(./assets/read_news.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -315px 0px;
+    background-size: 200px;
     object-fit: cover;
-
-
 
 }
 
 .content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 14.8em;
-    padding-left: 37px;
+
 }
 
 .content h2 {
 
-    width: 666px;
-    height: 30.44px;
-    margin-bottom: 19px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 28px;
+
+    line-height: 70px;
+
 
     /* Green */
 
@@ -81,17 +60,12 @@ body {
 
 .content h4 {
 
-    width: 517px;
-    height: 16px;
-    margin-bottom: 15px;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 16px;
-    /* identical to box height */
 
-
+    margin-bottom: 17px;
     color: #FFFFFF;
 }
 
@@ -104,23 +78,22 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 19px;
+    margin-bottom: 67px;
 
     color: #A8A8A8;
+
+
+}
+form{
+    flex-wrap: wrap;
 }
 
-form label {
-    position: absolute;
-    width: 133px;
-    height: 19px;
-    left: 36px;
-    top: 430px;
-
+label {
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 138.73%;
+    line-height: 30px;
     /* or 19px */
 
 
@@ -128,85 +101,60 @@ form label {
 }
 
 input {
-    position: absolute;
-    width: 798px;
+    position: relative;
+    width: 751px;
     height: 48px;
-    left: 36px;
-    top: 465px;
-    padding-left: 15px;
+
+    padding-left: 16px;
+
+    font-size: 17px;
+    border: none;
+    border-left: 6px solid #04D361;
     outline: none;
     filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
-}
 
-.retangle {
-    position: absolute;
-    width: 5px;
-    height: 48px;
-    left: 36px;
-    top: 465px;
-
-    background: #04D361;
     z-index: 99;
 }
 
-
-.send button {
+.btn {
     position: absolute;
     width: 48px;
     height: 48px;
     left: 801px;
-    top: 465px;
+    top: 453px;
+    border: none;
     color: #FFFFFF;
-    background: #8257E5;
+    background: #723bf3;
     cursor: pointer;
+
+    z-index: 99;
+
+    transition: ease-in-out .2s;
 }
 
-.sub-link {
-
-    position: absolute;
-    width: 196px;
-    height: 24px;
-    left: 36px;
-    top: 587px;
-
-    /*position down links*/
+.btn:hover {
+    background-color: #261847;
+    ;
 }
 
-ul li a {
+#error {
+    display: none;
+    font-size: 14px;
+    color: rgb(240, 46, 46);
+    line-height: 26px;
+}
+
+li {
+    list-style: none;
+
     display: flex;
     align-items: center;
-    text-align: center;
+    margin-top: 35px;
+
+}
+
+li a,
+span {
+    text-decoration: none;
     color: #8257E5;
-    position: absolute;
-
-    font-family: 'League Spartan';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 138.73%;
-    
-
-}
-.link1{
-    transition: 0.4s;
-    
-}
-.link1:hover {
-    border-bottom: 1px solid #04D361;
-    transform: scale(1.1);
-    transition: 0.4s;
-    
-}
-
-
-.feather-arrow-right {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    left: 154px;
-    top: -1px;
-
-    /*svg position*/
-
-
 }
